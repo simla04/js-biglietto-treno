@@ -11,7 +11,7 @@
 
     let Kilometers = prompt('Quanti kilometri deve fare?');
     let EtaPersona = parseInt(prompt("Quanti anni ha?"));
-    const priceKm =0.21;
+    const priceKm = 0.21;
     let ticketprice = Kilometers * priceKm; 
 
 
@@ -23,12 +23,12 @@
 
 
     if (EtaPersona <=18){
-    ticketprice = Discount20 ;
+    ticketprice = Discount20.toFixed(2);
     }
     else if(EtaPersona >= 65){
-    ticketprice = Discount40;
+    ticketprice = Discount40.toFixed(2);
     }
     else{
     ticketprice
     }
-    document.getElementById('prezzo-biglietto').innerHTML = `il prezzo del biglietto è:  ${ticketprice}`;
+    document.getElementById('prezzo-biglietto').innerHTML = `Il prezzo del biglietto è:  ${ticketprice} Є`;
